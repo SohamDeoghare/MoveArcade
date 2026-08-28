@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import GamesPage from "../pages/GamesPage";
 import LeaderboardPage from "../pages/LeaderboardPage";
 import ProfilePage from "../pages/ProfilePage";
+import GamePage from "../pages/GamePage";
 
 function AppRouter() {
   return (
@@ -13,6 +14,7 @@ function AppRouter() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/games" element={<GamesPage />} />
+          <Route path="/games/:gameId" element={<GamePage />} />
           <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="/profile" element={<ProfilePage />} />
         </Route>
