@@ -1996,4 +1996,4 @@ function FruitSlashGame() {
   );
 }
 
-export default FruitSlashGame;
+export default FruitSlashGame;  
